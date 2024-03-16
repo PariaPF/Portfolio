@@ -1,0 +1,416 @@
+/* GLOBAL */
+* {
+  font-family: Poppins, sans-serif;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0px;
+  color: #333533;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 380;
+}
+
+h5 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* CONTAINERS */
+
+.header,
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 45px 25px;
+}
+
+/* HEADER */
+
+.header img {
+  width: 290.01px;
+  height: 288px;
+  border-radius: 50%;
+}
+
+.header {
+  align-items: center;
+  background-color: #333533;
+  height: 376px;
+  padding: 45px 0px;
+}
+
+.title {
+  margin: 50px;
+}
+
+.header .title h1 {
+  color: #ffd100;
+  font-size: 56px;
+  margin: 0px;
+  line-height: 1;
+}
+
+.header .position {
+  color: #fafafa;
+  font-size: 32px;
+  margin: 40px 0px;
+}
+
+.header .position i {
+  color: #ffd100;
+}
+
+.button {
+  color: #ffd100;
+  border: 2px solid #ffd100;
+  border-radius: 5px;
+  padding: 8px 24px;
+}
+
+.button:hover {
+  background-color: #ffd100;
+  color: #333533;
+}
+
+.button:hover i {
+  color: #333533;
+}
+
+.button i {
+  color: #ffd100;
+  margin-right: 6px;
+}
+
+.lang {
+  color: #fafafa;
+  border: 2px solid #fafafa;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+  opacity: 0.7;
+  align-self: flex-start;
+}
+
+.lang i {
+  color: #fafafa;
+  margin-right: 4px;
+}
+
+.lang:hover {
+  opacity: 1;
+}
+
+/* NAVBAR */
+
+nav {
+  width: 250px;
+  font-size: 24px;
+  padding: 0px 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav li.active {
+  font-weight: 500;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 48px;
+  border-left: 2px dashed #333533;
+  margin: 16px 0px 16px 21px;
+}
+
+nav ul li .marker {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #333533;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+nav ul li.active .marker,
+nav ul li:hover .marker {
+  background-color: #333533;
+  color: #ffd100;
+  font-size: 22px;
+}
+
+nav ul {
+  margin-top: 11px;
+}
+
+/* SECTIONS */
+
+.sections {
+  width: 700px;
+  padding-left: 45px;
+  border-left: 1px solid #333533;
+}
+
+.sections section:last-child {
+  width: 880px;
+}
+
+.About-Me h4,
+.contacts p i {
+  color: #a0a0a0;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts div {
+  width: 50%;
+}
+
+.contacts p i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.contacts p i:hover {
+  color: #333533;
+  font-size: larger;
+}
+
+.socials li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.About-Me h4 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contacts p {
+  margin-top: 0px;
+}
+
+.socials {
+  margin-top: 0px;
+}
+
+.socials li a span {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+}
+
+.socials li span.linkedin {
+  background-image: url("../icons/socials/linkedin.png");
+}
+
+.socials li:hover span.linkedin {
+  background-image: url("../icons/socials/linkedin-hover.png");
+}
+
+.socials li span.github {
+  background-image: url("../icons/socials/github.png");
+}
+
+.socials li:hover span.github {
+  background-image: url("../icons/socials/github-hover.png");
+}
+
+.socials li span.stackoverflow {
+  background-image: url("../icons/socials/stackoverflow.png");
+}
+
+.socials li:hover span.stackoverflow {
+  background-image: url("../icons/socials/stackoverflow-hover.png");
+}
+
+.socials li span.twitter {
+  background-image: url("../icons/socials/twitter.png");
+}
+
+.socials li:hover span.twitter {
+  background-image: url("../icons/socials/twitter-hover.png");
+}
+
+.socials li span.telegram {
+  background-image: url("../icons/socials/telegram.png");
+}
+
+.socials li:hover span.telegram {
+  background-image: url("../icons/socials/telegram-hover.png");
+}
+
+.socials li span.whatsapp {
+  background-image: url("../icons/socials/whatsapp.png");
+}
+
+.socials li:hover span.whatsapp {
+  background-image: url("../icons/socials/whatsapp-hover.png");
+}
+
+.socials li span.instagram {
+  background-image: url("../icons/socials/instagram.png");
+}
+
+.socials li:hover span.instagram {
+  background-image: url("../icons/socials/instagram-hover.png");
+}
+
+.skills li,
+.tools li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #a0a0a0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 10px 24px;
+}
+
+.skills li div,
+.tools li div {
+  display: flex;
+  align-items: center;
+}
+
+.skills li:hover,
+.tools li:hover {
+  box-shadow: 1px 1px #a0a0a0;
+}
+
+.skills .level,
+.tools .level {
+  font-weight: 500;
+}
+.skills li i,
+.tools li i {
+  padding: 10px 12px;
+  border-left: 1px solid #a0a0a0;
+}
+.skills li img {
+  margin-right: 6px;
+}
+
+.skills li div:last-child,
+.tools li div:last-child {
+  width: 148.4px;
+}
+
+.tools li img {
+  margin-right: 10px;
+}
+
+.other-skills li {
+  border: 1px solid #a0a0a0;
+  border-radius: 24px;
+  padding: 4px 16px;
+  display: inline-block;
+  margin: 0px 16px 18px 0px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  border: 1px solid #a0a0a0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 10px;
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+.project:not(:last-child) {
+  margin-right: 20px;
+}
+
+.project .project-title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.project .description {
+  font-size: 14px;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tech ul li {
+  display: inline-block;
+}
+
+.tech ul li img {
+  width: 25px;
+}
+
+.project .buttons {
+  display: flex;
+}
+.project .buttons a {
+  width: 50%;
+  color: #333533;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.project .buttons a i {
+  margin-right: 5px;
+}
+
+.project .buttons a:last-child,
+.project .buttons a:first-child:hover {
+  border: 1px solid #333533;
+  border-radius: 4px;
+}
+
+.project .buttons a:last-child {
+  margin-left: 4px;
+}
+
+.project .buttons a:last-child:hover {
+  color: #fafafa;
+  background-color: #333533;
+}
+
+.project:hover {
+  box-shadow: 1px 1px #a0a0a0;
+}
