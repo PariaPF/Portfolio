@@ -31,6 +31,10 @@ ul {
   padding: 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /* CONTAINERS */
 
 .header,
@@ -119,23 +123,23 @@ ul {
   opacity: 1;
 }
 
-/* NAVBAR */
+/* NavBAR */
 
-nav {
+.container nav {
   width: 250px;
   font-size: 24px;
   padding: 0px 20px;
 }
 
-nav ul li {
+.container nav ul li {
   cursor: pointer;
 }
 
-nav li.active {
+.container nav li.active {
   font-weight: 500;
 }
 
-nav ul li:not(:last-child)::after {
+.container nav ul li:not(:last-child)::after {
   content: "";
   display: block;
   height: 48px;
@@ -143,7 +147,7 @@ nav ul li:not(:last-child)::after {
   margin: 16px 0px 16px 21px;
 }
 
-nav ul li .marker {
+.container nav ul li .marker {
   display: inline-block;
   width: 42px;
   height: 42px;
@@ -155,14 +159,14 @@ nav ul li .marker {
   margin-right: 12px;
 }
 
-nav ul li.active .marker,
-nav ul li:hover .marker {
+.container nav ul li.active .marker,
+.container nav ul li:hover .marker {
   background-color: #333533;
   color: #ffd100;
   font-size: 22px;
 }
 
-nav ul {
+.container nav ul {
   margin-top: 11px;
 }
 

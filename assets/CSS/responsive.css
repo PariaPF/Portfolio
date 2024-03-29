@@ -104,6 +104,38 @@
 
   .other-skills,
   .other-skills li:last-child {
+    margin: 0;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0;
+    background-color: #333533;
+    color: #fafafa;
+  }
+
+  .mobile-nav ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .mobile-nav ul li i {
+    margin-right: 5px;
+  }
+
+  .mobile-nav ul li.active {
+    color: #ffd100;
+    border-bottom: 4px solid #ffd100;
   }
 }
